@@ -1,0 +1,323 @@
+body, html {
+  background-color: #a12e2e;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  margin: 0px;
+  padding: 0px; }
+
+h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  cursor: pointer; }
+
+p {
+  padding-bottom: 10px; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  padding-bottom: 10px; }
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 1.1em; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  line-height: 1.1em; }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.1em; }
+
+h4 {
+  font-size: 1.5em;
+  line-height: 1.1em;
+  font-weight: 600; }
+
+#videos video {
+  width: 1px;
+  height: 1px; }
+
+.browserlist {
+  padding-top: 20px; }
+  .browserlist a {
+    display: block;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0); }
+    .browserlist a i {
+      font-size: 2.5em;
+      margin-bottom: 10px; }
+    .browserlist a:hover {
+      border-bottom: 2px solid white; }
+
+.camera_vr_display, .camera_desktop_display, .camera_mobile_display {
+  display: none; }
+
+body.camera_mobile .camera_mobile_display {
+  display: block; }
+
+body.camera_desktop .camera_desktop_display {
+  display: block; }
+
+body.camera_vr .camera_vr_display {
+  display: block; }
+
+input {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: #fff;
+  white-space: normal; }
+  input.large {
+    font-size: 18px;
+    line-height: 23px;
+    padding: 12px;
+    padding-left: 17px;
+    padding-right: 17px; }
+
+.input {
+  padding-top: 10px;
+  transition: .25s; }
+  .input.withButton input {
+    border-right: none;
+    width: 75%; }
+  .input.withButton .btn {
+    border-left: none; }
+  .input.input_active {
+    padding-bottom: 160px; }
+
+.seperator {
+  margin-top: 10px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 10px; }
+
+.loader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #a12e2e;
+  text-align: center; }
+  .loader .viewLandscape {
+    padding: 0px;
+    background-color: transparent;
+    color: #fff;
+    font-size: .9em;
+    line-height: 1.2em; }
+    .loader .viewLandscape img {
+      width: 76px; }
+    .loader .viewLandscape p {
+      padding: 9px; }
+  .loader .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; }
+    .loader .inner .loaderWrap {
+      color: #fff;
+      padding-bottom: 20px;
+      line-height: 20px;
+      font-size: 20px;
+      text-align: center; }
+    .loader .inner #per_output {
+      color: #fff;
+      font-size: 1.25em;
+      padding-bottom: 0px;
+      font-family: 'Quicksand';
+      font-weight: 700; }
+
+.camera_vr .loader .inner {
+  width: 120px; }
+.camera_vr .loader .loaderWrap {
+  position: absolute;
+  left: -120px; }
+.camera_vr .loader .loaderWrap.camera_vr_display {
+  position: absolute;
+  left: auto;
+  right: -120px; }
+
+.btn {
+  font-weight: 700;
+  background-color: white;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0);
+  position: relative;
+  transition: .25s;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000; }
+  .btn.top, .btn.left, .btn.bottom, .btn.right {
+    position: absolute; }
+  .btn.top {
+    top: 10px; }
+  .btn.left {
+    left: 10px; }
+  .btn.large {
+    font-size: 18px;
+    line-height: 23px;
+    padding: 12px;
+    padding-left: 17px;
+    padding-right: 17px; }
+  .btn:hover, .btn.black {
+    color: white;
+    background-color: #00316c; }
+  .btn.black {
+    background-color: black; }
+    .btn.black:hover {
+      background-color: white;
+      color: black; }
+  .btn.red {
+    background-color: #a12e2e;
+    color: #fff; }
+    .btn.red:hover {
+      background-color: white;
+      color: black; }
+
+.experienceSelect .option {
+  float: left;
+  width: 50%;
+  box-sizing: border-box; }
+  .experienceSelect .option img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px; }
+
+.cardboard-icon {
+  display: block;
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.clear {
+  clear: both; }
+
+.btnGroup .btn {
+  width: 80px; }
+  .btnGroup .btn:first-child {
+    border-right: none; }
+  .btnGroup .btn:last-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+
+.step {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  visibility: hidden;
+  transition: all 0s, opacity .5s;
+  z-index: 1; }
+  .step.current {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2; }
+  .step .inner.centered {
+    text-align: center; }
+
+#renderCanvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+
+.overlays {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  visibility: hidden;
+  overflow: visible;
+  transition: all 0s, opacity 1s 0s ease-in-out;
+  opacity: 0; }
+  @media all and (min-width: 790px) {
+    .overlays {
+      background-image: url("/assets/img/glow.png");
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: 66% auto; } }
+  .overlays.active {
+    visibility: visible;
+    opacity: 1; }
+  .overlays .overlay {
+    background-color: rgba(1, 1, 1, 0.2);
+    border-radius: 0px;
+    border-top: 4px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    transition: all 0s, opacity 1s 0s ease-in-out;
+    opacity: 0;
+    color: #FFF;
+    text-align: center;
+    width: 440px;
+    margin-left: -220px;
+    visibility: hidden;
+    bottom: 50px;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box; }
+    .overlays .overlay.nopadding {
+      padding: 0px;
+      padding-top: 25px; }
+      .overlays .overlay.nopadding h4 {
+        padding-left: 25px;
+        padding-right: 25px; }
+    @media all and (max-width: 790px) {
+      .overlays .overlay {
+        width: 100%;
+        margin-left: 0px;
+        left: 0px;
+        bottom: 0px;
+        border-radius: 0px; } }
+    .overlays .overlay.active {
+      opacity: 1;
+      visibility: visible; }
+
+.viewLandscape {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .viewLandscape img {
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .viewLandscape p {
+    text-align: center;
+    padding-top: 13px; }
+
+/*# sourceMappingURL=main.v1.css.map */

@@ -1,0 +1,61 @@
+.holdingpage {
+	text-align: center;
+
+	.inner {
+		max-width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 70px;
+		p {
+			line-height: 1.4em;
+			padding-bottom: 20px;
+		}
+		img {
+			width: 100%;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 70px;
+		}
+		.seperator {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		h3 {
+			text-transform: none;
+			margin-top: 30px;
+			padding-bottom: 20px;
+		}
+		.input.withButton {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		.wufooform {
+			max-width: 340px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+	}
+
+	&.stayintouch {
+		.inner {
+			padding-bottom: 0px;
+			img {
+				max-width:300px;
+				padding-top:50px;
+			}
+		}
+	}
+
+}
+
+html{
+	background-image: url(/assets/img/holdingpage-bg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
