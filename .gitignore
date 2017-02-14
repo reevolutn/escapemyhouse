@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+# ignore the 4k videos because git has a spaz when uploading
+assets/video/hallway_4k.mp4
+assets/video/lounge_4k.mp4
