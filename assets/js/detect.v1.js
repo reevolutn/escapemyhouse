@@ -26,6 +26,13 @@ detect = {
 			'microsoft edge' 	: 14,
 			'safari' 			: 9,
 			'firefox' 			: 45
+		},
+		phonegap : {
+			'chrome' 			: 50,
+			'internet explorer' : 11,
+			'microsoft edge' 	: 14,
+			'safari' 			: 9,
+			'firefox' 			: 45
 		}
 	},
 	meetsRequirements : true,
