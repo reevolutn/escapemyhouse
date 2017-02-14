@@ -279,17 +279,17 @@ u = {
 	
 	setOrientation : function(orientation) {
 		if(orientation == 'landscape') {
-			if(detect.os.name == 'phonegap') {
-				var so = cordova.plugins.screenorientation;
-				so.setOrientation(so.Orientation.LANDSCAPE);
-			} else {
+			//if(detect.os.name == 'phonegap') {
+				//var so = cordova.plugins.screenorientation;
+				//so.setOrientation(so.Orientation.LANDSCAPE);
+			//} else {
 				var lockFunction =  window.screen.orientation.lock;
 				if (lockFunction.call(window.screen.orientation, 'landscape')) {
 					console.log('Orientation locked')
 				} else {
 					console.error('There was a problem in locking the orientation')
 				}	
-			}
+			//}
 		}
 	},
 
