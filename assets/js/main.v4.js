@@ -514,6 +514,10 @@ u = {
 				u.bandwidth = 'medium';
 			}
 
+			if(detect.os.name == 'phonegap') {
+				u.bandwidth = 'medium';
+			}
+
 			//update
 			u.setVideoBandwidth();
 		}
